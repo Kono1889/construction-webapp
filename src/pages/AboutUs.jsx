@@ -1,5 +1,5 @@
 import React from "react";
-import image1 from "./images/Screenshot 2024-12-30 144053.png";
+import image1 from "./images/annie-spratt-QckxruozjRg-unsplash.jpg";
 
 const AboutUs = () => {
   return (
@@ -17,7 +17,7 @@ const AboutUs = () => {
         <img
           src={image1}
           alt="Team brainstorming"
-          className="w-[800px] h-[400px] rounded-[1rem] shadow-lg"
+          className="w-[700px] h-[400px] rounded-[1rem] shadow-lg"
         />
       </div>
 
