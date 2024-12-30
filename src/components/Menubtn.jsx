@@ -67,7 +67,7 @@ const Menubtn = () => {
           }`}
         >
           <nav>
-            <ul className="flex flex-col items-start p-6 space-y-4 text-base sm:text-lg">
+            <ul className="flex flex-col items-start p-10 space-y-10 text-base sm:text-[1.5rem]">
               {[
                 "Home",
                 "About Us",
