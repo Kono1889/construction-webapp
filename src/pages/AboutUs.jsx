@@ -3,7 +3,7 @@ import image1 from "./images/annie-spratt-QckxruozjRg-unsplash.jpg";
 
 const AboutUs = () => {
   return (
-    <div id="about-us" className="bg-gray-900 text-gray-200 py-10 px-[8rem]">
+    <div id="about-us" className="bg-gray-900 text-gray-200 py-10 px-6 sm:px-12 lg:px-[8rem]">
       <h1 className="font-bold text-2xl text-center mb-4">
         The people behind Craftsman Construct
       </h1>
@@ -17,7 +17,7 @@ const AboutUs = () => {
         <img
           src={image1}
           alt="Team brainstorming"
-          className="w-[700px] h-[400px] rounded-[1rem] shadow-lg"
+          className="w-full sm:w-[500px] md:w-[600px] lg:w-[700px] h-auto rounded-[1rem] shadow-lg"
         />
       </div>
 
@@ -28,8 +28,7 @@ const AboutUs = () => {
           being."
         </p>
         <div className="mt-4 text-gray-400">
-          <span className="font-bold"> Juhani Pallasmaa</span>, Software Finnish
-          architect and former professor
+          <span className="font-bold"> Juhani Pallasmaa</span>, Finnish architect and former professor
         </div>
       </div>
 
