@@ -1,0 +1,156 @@
+/* Landing Cards */
+.landing-cards {
+  background-color: rgba(217, 223, 198, 0.8);
+}
+
+/* Card */
+/* Main card container */
+.responsive-card {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 300px;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.responsive-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header section */
+.card-header {
+  padding: 16px 0px;
+  text-align: left;
+}
+
+p.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+p.card-date {
+  font-size: 0.8rem;
+  color: #777;
+  margin: 5px 0 0 0;
+}
+
+/* Image section */
+.card-image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px 10px ;
+}
+
+/* Footer section */
+.card-footer {
+  padding: 16px 0px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+p.card-category {
+  font-size: 0.9rem;
+  font-weight: semi-bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .responsive-card {
+    max-width: 600px;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-date {
+    font-size: 1rem;
+  }
+
+  .card-category {
+    font-size: 1rem;
+  }
+}
+
+/* Founders Cards */
+.responsive-card2 {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 300px;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.responsive-card2:hover {
+  transform: translateY(-5px);
+}
+
+/* Header section */
+.card-header2 {
+  padding: 16px 0px;
+  text-align: left;
+}
+
+.card-name2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+p.card-date2 {
+  font-size: 0.8rem;
+  color: #777;
+  margin: 5px 0 0 0;
+}
+
+/* Image section */
+.card-image-container2 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-image2 {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px 10px ;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .responsive-card2 {
+    max-width: 600px;
+  }
+
+  .card-name2 {
+    font-size: 1.5rem;
+  }
+
+  .card-date2 {
+    font-size: 1rem;
+  }
+
+}
