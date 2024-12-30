@@ -21,7 +21,12 @@ const Menubtn = () => {
     (e) => {
       const menu = document.getElementById("menu");
       const button = document.getElementById("menu-button");
-      if (menu && !menu.contains(e.target) && button && !button.contains(e.target)) {
+      if (
+        menu &&
+        !menu.contains(e.target) &&
+        button &&
+        !button.contains(e.target)
+      ) {
         toggleMenu();
       }
     },
@@ -46,7 +51,7 @@ const Menubtn = () => {
       <button
         id="menu-button"
         onClick={toggleMenu}
-        className="fixed top-[800px] right-4 bg-[rgba(0,0,0,0.2)] text-white p-5 rounded-full shadow-md z-50 sm:top-[600px] sm:right-6"
+        className="fixed top-[60px] right-4 bg-[rgba(0,0,0,0.45)] text-white p-5 rounded-full shadow-md z-50 sm:top-[60px] sm:right-6"
       >
         ☰
       </button>
@@ -56,12 +61,20 @@ const Menubtn = () => {
         <div
           id="menu"
           className={`fixed top-0 left-0 w-[60%] sm:w-[100%] lg:w-[250px] h-screen bg-[rgba(255,255,255,0.7)] shadow-lg z-40 transition-all duration-300 ${
-            menuOpen && !isFadingOut ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full"
+            menuOpen && !isFadingOut
+              ? "opacity-100 translate-x-0"
+              : "opacity-0 -translate-x-full"
           }`}
         >
           <nav>
             <ul className="flex flex-col items-start p-6 space-y-4 text-base sm:text-lg">
-              {["Home", "About Us", "Products", "Projects", "Sustainability"].map((item, index) => (
+              {[
+                "Home",
+                "About Us",
+                "Products",
+                "Projects",
+                "Sustainability",
+              ].map((item, index) => (
                 <li
                   key={item}
                   style={{
@@ -75,9 +88,7 @@ const Menubtn = () => {
                     className="relative text-gray-900"
                   >
                     {item}
-                    <span
-                      className="absolute bottom-0 left-0 w-0 h-[2px] bg-gray-900 transition-all duration-300 group-hover:w-full"
-                    />
+                    <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-gray-900 transition-all duration-300 group-hover:w-full" />
                   </a>
                 </li>
               ))}
